@@ -58,6 +58,4 @@ main =
         doInitialize = \env _req -> pure $ Right env,
         staticHandlers = handlers,
         interpretHandler = \env -> Iso (runLspT env) liftIO,
-        options = Options Nothing Nothing Nothing Nothing Nothing Nothing Nothing Nothing (Just $ ServerInfo Text (Maybe Text))
-        
-      }
+        options = defaultOptions }
