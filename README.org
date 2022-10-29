@@ -1,0 +1,10 @@
+#+TITLE: SilverwareLSP
+
+* About
+
+* Test
+On GNU/Emacs evaluate the following to get request from a real JsonRPC sent by lsp-mode:
+
+#+BEGIN_SRC emacs-lisp
+(setq lsp-print-io t)
+#+END_SRC
